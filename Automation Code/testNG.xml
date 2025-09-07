@@ -1,7 +1,0 @@
-<suite name="test">
-<test name="test">
-<classes>
-<class name="StepDefinitions.TestRunner"/>
-</classes>
-</test>
-</suite>
