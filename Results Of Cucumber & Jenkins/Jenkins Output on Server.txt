@@ -1,0 +1,283 @@
+Started by user kavali venkata sai sri karthik
+Running as SYSTEM
+Building in workspace C:\Users\karth\.jenkins\workspace\BStackDemo
+[BStackDemo] $ cmd.exe /C "mvn -f K:\eclipse-workspace\BrowserStack\pom.xml clean test && exit %%ERRORLEVEL%%"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< BrowserStack:BrowserStack >----------------------
+[INFO] Building BrowserStack 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ BrowserStack ---
+[INFO] Deleting K:\eclipse-workspace\BrowserStack\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ BrowserStack ---
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ BrowserStack ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ BrowserStack ---
+[INFO] Copying 10 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ BrowserStack ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 21 source files with javac [debug target 17] to target\test-classes
+[INFO] /K:/eclipse-workspace/BrowserStack/src/test/java/runners/TestRunner.java: K:\eclipse-workspace\BrowserStack\src\test\java\runners\TestRunner.java uses or overrides a deprecated API.
+[INFO] /K:/eclipse-workspace/BrowserStack/src/test/java/runners/TestRunner.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ BrowserStack ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running runners.TestRunner
+
+Scenario: add to cart          # file:///K:/eclipse-workspace/BrowserStack/src/test/resources/features/AddToCart.feature:2
+11:18:36.537 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+11:18:36.833 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=139 in cache (valid until 12:01:02 07/09/2025 IST)
+11:18:36.835 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome139=139.0.7258.154 in cache (valid until 12:04:41 07/09/2025 IST)
+11:18:36.836 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+11:18:36.852 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 139.0.7258.154 found in cache
+11:18:36.854 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\karth\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+Sep 07, 2025 11:18:38 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 11:18:38 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.157. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given open the bstack site # stepDefinitions.AddToCartImplementation.open_the_bstack_site()
+  ✔ Then login to account      # stepDefinitions.AddToCartImplementation.login_to_account()
+  ✔ Then add to cart           # stepDefinitions.AddToCartImplementation.add_to_cart()
+  ✔ Then logout from that      # stepDefinitions.AddToCartImplementation.logout_from_that()
+
+Scenario: checkout page              # file:///K:/eclipse-workspace/BrowserStack/src/test/resources/features/CheckoutPage.feature:2
+11:19:08.423 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+11:19:08.445 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=139 in cache (valid until 12:01:02 07/09/2025 IST)
+11:19:08.445 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome139=139.0.7258.154 in cache (valid until 12:04:41 07/09/2025 IST)
+11:19:08.446 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+11:19:08.458 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 139.0.7258.154 found in cache
+11:19:08.459 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\karth\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+Sep 07, 2025 11:19:09 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 11:19:09 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.157. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given first open the bstack site # stepDefinitions.CheckoutPageImplementation.first_open_the_bstack_site()
+  ✔ Then add items into cart         # stepDefinitions.CheckoutPageImplementation.add_items_into_cart()
+  ✔ Then goto checkout page          # stepDefinitions.CheckoutPageImplementation.goto_checkout_page()
+Sep 07, 2025 11:19:51 AM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+
+  ✔ Then close the browser           # stepDefinitions.CheckoutPageImplementation.close_the_browser()
+
+Scenario: delete from cart            # file:///K:/eclipse-workspace/BrowserStack/src/test/resources/features/DeleteCart.feature:2
+11:19:51.348 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+11:19:51.373 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=139 in cache (valid until 12:01:02 07/09/2025 IST)
+11:19:51.375 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome139=139.0.7258.154 in cache (valid until 12:04:41 07/09/2025 IST)
+11:19:51.375 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+11:19:51.391 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 139.0.7258.154 found in cache
+11:19:51.393 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\karth\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+Sep 07, 2025 11:19:52 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 11:19:52 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.157. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given open the stackdemo site     # stepDefinitions.DeleteCartImplementation.open_the_stackdemo_site()
+  ✔ Then first add item from the cart # stepDefinitions.DeleteCartImplementation.first_add_item_from_the_cart()
+  ✔ Then delete item from the cart    # stepDefinitions.DeleteCartImplementation.delete_item_from_the_cart()
+  ✔ Then close the current window     # stepDefinitions.DeleteCartImplementation.close_the_current_window()
+
+Scenario: offers page               # file:///K:/eclipse-workspace/BrowserStack/src/test/resources/features/Offers.feature:2
+11:20:49.499 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+11:20:49.519 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=139 in cache (valid until 12:01:02 07/09/2025 IST)
+11:20:49.522 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome139=139.0.7258.154 in cache (valid until 12:04:41 07/09/2025 IST)
+11:20:49.522 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+11:20:49.537 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 139.0.7258.154 found in cache
+11:20:49.539 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\karth\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+Sep 07, 2025 11:20:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 11:20:50 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.157. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given first open the bstack url # stepDefinitions.OffersImplementation.first_open_the_bstack_url()
+  ✔ When give crediantial and login # stepDefinitions.OffersImplementation.give_crediantial_and_login()
+  ✔ Then goto offers page           # stepDefinitions.OffersImplementation.goto_offers_page()
+  ✔ Then finally exit               # stepDefinitions.OffersImplementation.finally_exit()
+
+Scenario: order by                                            # file:///K:/eclipse-workspace/BrowserStack/src/test/resources/features/OrderBy.feature:2
+11:20:59.643 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+11:20:59.667 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=139 in cache (valid until 12:01:02 07/09/2025 IST)
+11:20:59.668 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome139=139.0.7258.154 in cache (valid until 12:04:41 07/09/2025 IST)
+11:20:59.668 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+11:20:59.681 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 139.0.7258.154 found in cache
+11:20:59.683 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\karth\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+Sep 07, 2025 11:21:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 11:21:00 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.157. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given first login                                         # stepDefinitions.OrderByImplementation.first_login()
+  ✔ Then then in home page sort orderby using orderBy filters # stepDefinitions.OrderByImplementation.then_in_home_page_sort_orderby_using_order_by_filters()
+  ✔ Then exit window                                          # stepDefinitions.OrderByImplementation.exit_window()
+
+Scenario: searching items             # file:///K:/eclipse-workspace/BrowserStack/src/test/resources/features/SearchItems.feature:2
+11:21:41.124 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+11:21:41.143 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=139 in cache (valid until 12:01:02 07/09/2025 IST)
+11:21:41.144 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome139=139.0.7258.154 in cache (valid until 12:04:41 07/09/2025 IST)
+11:21:41.144 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+11:21:41.160 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 139.0.7258.154 found in cache
+11:21:41.160 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\karth\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+Sep 07, 2025 11:21:42 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 11:21:42 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.157. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given first open stackdemo site   # stepDefinitions.SearchImplementation.first_open_stackdemo_site()
+  ✔ Then login into site              # stepDefinitions.SearchImplementation.login_into_site()
+  ✔ Then goto search and search items # stepDefinitions.SearchImplementation.goto_search_and_search_items()
+Sep 07, 2025 11:21:54 AM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+
+  ✔ Then exit                         # stepDefinitions.SearchImplementation.exit()
+
+Scenario: favourties page            # file:///K:/eclipse-workspace/BrowserStack/src/test/resources/features/favourites.feature:2
+11:21:54.653 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+11:21:54.666 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=139 in cache (valid until 12:01:02 07/09/2025 IST)
+11:21:54.666 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome139=139.0.7258.154 in cache (valid until 12:04:41 07/09/2025 IST)
+11:21:54.668 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+11:21:54.676 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 139.0.7258.154 found in cache
+11:21:54.678 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\karth\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+Sep 07, 2025 11:21:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 11:21:55 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.157. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given open the browserstack site # stepDefinitions.FavouritesPageImplementation.open_the_browserstack_site()
+  ✔ Then login with the crediantials # stepDefinitions.FavouritesPageImplementation.login_with_the_crediantials()
+  ✔ Then goto favourites page        # stepDefinitions.FavouritesPageImplementation.goto_favourites_page()
+Sep 07, 2025 11:22:11 AM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+
+  ✔ Then exit from the browser       # stepDefinitions.FavouritesPageImplementation.exit_from_the_browser()
+
+Scenario: Login to BStack demo       # file:///K:/eclipse-workspace/BrowserStack/src/test/resources/features/login.feature:2
+11:22:11.330 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+11:22:11.349 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=139 in cache (valid until 12:01:02 07/09/2025 IST)
+11:22:11.350 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome139=139.0.7258.154 in cache (valid until 12:04:41 07/09/2025 IST)
+11:22:11.350 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+11:22:11.364 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 139.0.7258.154 found in cache
+11:22:11.365 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\karth\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+Sep 07, 2025 11:22:12 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 11:22:12 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.157. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given Open BStackDemo website    # stepDefinitions.LoginImplementation.open_b_stack_demo_website()
+  ✔ When Enter username and password # stepDefinitions.LoginImplementation.enter_username_and_password()
+Sep 07, 2025 11:23:23 AM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+
+  ✔ Then Close the window            # stepDefinitions.LoginImplementation.close_the_window()
+
+Scenario: how to logout             # file:///K:/eclipse-workspace/BrowserStack/src/test/resources/features/logout.feature:2
+11:23:23.920 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+11:23:23.937 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=139 in cache (valid until 12:01:02 07/09/2025 IST)
+11:23:23.938 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome139=139.0.7258.154 in cache (valid until 12:04:41 07/09/2025 IST)
+11:23:23.939 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+11:23:23.953 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 139.0.7258.154 found in cache
+11:23:23.954 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\karth\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+Sep 07, 2025 11:23:24 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 11:23:24 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.157. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given first open bstack website # stepDefinitions.LogoutImplementation.first_open_bstack_website()
+  ✔ Then login into account         # stepDefinitions.LogoutImplementation.login_into_account()
+  ✔ Then logout                     # stepDefinitions.LogoutImplementation.logout()
+  ✔ Then close that window          # stepDefinitions.LogoutImplementation.close_that_window()
+
+Scenario: orders page         # file:///K:/eclipse-workspace/BrowserStack/src/test/resources/features/orders.feature:2
+11:23:59.488 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+11:23:59.515 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=139 in cache (valid until 12:01:02 07/09/2025 IST)
+11:23:59.517 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome139=139.0.7258.154 in cache (valid until 12:04:41 07/09/2025 IST)
+11:23:59.517 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+11:23:59.528 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 139.0.7258.154 found in cache
+11:23:59.529 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\karth\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+Sep 07, 2025 11:24:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 11:24:00 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.157. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given open bstack webstie # stepDefinitions.OrdersImplementation.open_bstack_webstie()
+  ✔ Then login                # stepDefinitions.OrdersImplementation.login()
+  ✔ Then goto orders page     # stepDefinitions.OrdersImplementation.goto_orders_page()
+  ✔ Then simply exit          # stepDefinitions.OrdersImplementation.simply_exit()
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 359.5 s -- in runners.TestRunner
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  06:03 min
+[INFO] Finished at: 2025-09-07T11:24:35+05:30
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
