@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="173.896" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-09-08T15:51:54.999341100Z">
+<testcase classname="add the items to cart" name="add to cart" time="16.919">
+<system-out><![CDATA[
+Given open the bstack site..................................................passed
+Then login to account.......................................................passed
+Then add to cart............................................................passed
+Then logout from that.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="check the checkout page in the browser stack" name="checkout page" time="51.886">
+<system-out><![CDATA[
+Given first open the bstack site............................................passed
+Then add items into cart....................................................passed
+Then goto checkout page.....................................................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="delete item from the cart" name="delete from cart" time="20.136">
+<system-out><![CDATA[
+Given open the stackdemo site...............................................passed
+Then first add item from the cart...........................................passed
+Then delete item from the cart..............................................passed
+Then close the current window...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="check the offers page" name="offers page" time="5.915">
+<system-out><![CDATA[
+Given first open the bstack url.............................................passed
+When give crediantial and login.............................................passed
+Then goto offers page.......................................................passed
+Then finally exit...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="check order by feature" name="order by" time="17.279">
+<system-out><![CDATA[
+Given first login...........................................................passed
+Then then in home page sort orderby using orderBy filters...................passed
+Then exit window............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search items in the stackdemo" name="searching items" time="10.594">
+<system-out><![CDATA[
+Given first open stackdemo site.............................................passed
+Then login into site........................................................passed
+Then goto search and search items...........................................passed
+Then exit...................................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="check the favourites page in the site" name="favourties page" time="16.018">
+<system-out><![CDATA[
+Given open the browserstack site............................................passed
+Then login with the crediantials............................................passed
+Then goto favourites page...................................................passed
+Then exit from the browser..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login into BStack demo" name="Login to BStack demo" time="8.18">
+<system-out><![CDATA[
+Given Open BStackDemo website...............................................passed
+When Enter username and password............................................passed
+Then Close the window.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="logout from the current user" name="how to logout" time="12.961">
+<system-out><![CDATA[
+Given first open bstack website.............................................passed
+Then login into account.....................................................passed
+Then logout.................................................................passed
+Then close that window......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="check orders page in the site" name="orders page" time="13.766">
+<system-out><![CDATA[
+Given open bstack webstie...................................................passed
+Then login..................................................................passed
+Then goto orders page.......................................................passed
+Then simply exit............................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
